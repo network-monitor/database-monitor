@@ -1,0 +1,20 @@
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT * FROM "Memory breakdown (%)" WHERE ("servername" =~ /$/ AND "type" = 'Memory clerk')
+
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT * FROM "Memory breakdown (bytes)" WHERE ("servername" =~ /$/)
+SELECT * FROM "Rows size (bytes)" WHERE ("servername" =~ /$/ AND "type" = 'Database size')
+SELECT * FROM "Log size (bytes)" WHERE ("servername" =~ /$/ AND "type" = 'Database size')
+SELECT * FROM "Rows reads (bytes/sec)" WHERE ("servername" =~ /$/ AND "type" = 'Database IO')
+SELECT * FROM "Log reads (bytes/sec)" WHERE ("servername" =~ /$/ AND "type" = 'Database IO')
+SELECT * FROM "Rows writes (bytes/sec)" WHERE ("servername" =~ /$/ AND "type" = 'Database IO')
+SELECT * FROM "Log writes (bytes/sec)" WHERE ("servername" =~ /$/ AND "type" = 'Database IO')
+SELECT * FROM "Rows read latency (ms)" WHERE ("servername" =~ /$/ AND "type" = 'Database stats')
+SELECT * FROM "Log read latency (ms)" WHERE ("servername" =~ /$/ AND "type" = 'Database stats')
+SELECT * FROM "Rows write latency (ms)" WHERE ("servername" =~ /$/ AND "type" = 'Database stats')
+SELECT * FROM "Log write latency (ms)" WHERE ("servername" =~ /$/ AND "type" = 'Database stats')
+SELECT * FROM "Volume used space (bytes)" WHERE ("servername" =~ /$/ AND "type" = 'OS Volume space')
+SELECT * FROM "Volume available space (bytes)" WHERE ("servername" =~ /$/ AND "type" = 'OS Volume space')
+SELECT * FROM "Volume used space (%)" WHERE ("servername" =~ /$/ AND "type" = 'OS Volume space')
+SELECT "D: (DATA)", "L: (LOGS)", "T: (TEMPDB)" FROM "Volume used space (%)" WHERE ("servername" =~ /$/)

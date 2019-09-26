@@ -1,0 +1,64 @@
+# DML
+# CONTEXT-DATABASE: ebridge
+Page\ life\ expectancy\ |\ Buffer\ Manager,servername=SUNSYS,type=Performance\ counters value=4000
+Performance\ metrics,servername=SUNSYS,type=Performance\ metrics Buffer\ pool\ rate\ (bytes/sec)=4000
+Free\ list\ stalls/sec\ |\ Buffer\ Manager,servername=SUNSYS,type=Performance\ counters value=4000
+Memory\ Grants\ Pending\ |\ Memory\ Manager,servername=SUNSYS,type=Performance\ counters value=4000
+Rows\ reads\ (bytes/sec),servername=SUNSYS,type=Database\ IO value=4000
+Log\ reads\ (bytes/sec),servername=SUNSYS,type=Database\ IO Total=4000
+Rows\ writes\ (bytes/sec),servername=SUNSYS,type=Database\ IO Total=4000
+Log\ writes\ (bytes/sec),servername=SUNSYS,type=Database\ IO Total=4000
+Performance\ metrics,servername=SUNSYS,type=Performance\ metrics Average\ pending\ disk\ IO=4000
+Network\ IO\ waits\ |\ Average\ wait\ time\ (ms)\ |\ Wait\ Statistics,servername=SUNSYS,type=Performance\ counters value=4000
+User\ Connections\ |\ General\ Statistics,servername=SUNSYS,type=Performance\ counters value=4000
+Performance\ metrics,servername=SUNSYS,type=Performance\ metrics Connection\ memory\ per\ connection\ (bytes)=4000
+Data\ File(s)\ Size\ (KB)\ |\ _Total\ |\ Databases,servername=SUNSYS,type=Performance\ counters value=4000
+Data\ File(s)\ Size\ (KB)\ |\ mssqlsystemresource\ |\ Databases,servername=SUNSYS,type=Performance\ counters value=4000
+Percent\ Log\ Used\ |\ _Total\ |\ Databases,servername=SUNSYS,type=Performance\ counters value=4000
+Percent\ Log\ Used\ |\ mssqlsystemresource\ |\ Databases,servername=SUNSYS,type=Performance\ counters value=4000
+Backup/Restore\ Throughput/sec\ |\ _Total\ |\ Databases,servername=SUNSYS,type=Performance\ counters value=4000
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=SUNSYS,type=Performance\ counters value=4000
+Transactions/sec\ |\ _Total\ |\ Databases,servername=SUNSYS,type=Performance\ counters value=4000 
+Full\ Scans/sec\ |\ Access\ Methods,servername=SUNSYS,type=Performance\ counters value=4000
+SQL\ Cache\ Memory\ (KB)\ |\ Memory\ Manager,servername=SUNSYS,type=Performance\ counters value=4000
+Optimizer\ Memory\ (KB)\ |\ Memory\ Manager,servername=SUNSYS,type=Performance\ counters value=4000
+Log\ Pool\ Memory\ (KB)\ |\ Memory\ Manager,servername=SUNSYS,type=Performance\ counters value=4000
+Lock\ Memory\ (KB)\ |\ Memory\ Manager,servername=SUNSYS,type=Performance\ counters value=4000
+Database\ Cache\ Memory\ (KB)\ |\ Memory\ Manager,servername=SUNSYS,type=Performance\ counters value=4000
+Connection`\ Memory\ (KB)\ |\ Memory\ Manager,servername=SUNSYS,type=Performance\ counters value=4000
+Log\ Flushes/sec\ |\ _Total\ |\ Databases,servername=SUNSYS,type=Performance\ counters value=4000
+Log\ Pool\ Cache\ Misses/sec\ |\ _Total\ |\ Databases,servername=SUNSYS,type=Performance\ counters value=4000
+Log\ Pool\ Disk\ Reads/sec\ |\ _Total\ |\ Databases,servername=SUNSYS,type=Performance\ counters value=4000
+Log\ Pool\ Requests/sec\ |\ _Total\ |\ Databases,servername=SUNSYS,type=Performance\ counters value=4000
+Wait\ time\ (ms),servername=SUNSYS,type=Wait\ stats Buffer=100,CLR=100,I/O=100,Latch=100,Lock=100,Memory=100,Network=100,Service\ broker=100,Other=100,SQLOS=100,XEvent=100
+Wait\ tasks,servername=SUNSYS,type=Wait\ stats Buffer=100,CLR=100,I/O=100,Latch=100,Lock=100,Memory=100,Network=100,Service\ broker=100,Other=100,SQLOS=100,XEvent=100
+Performance\ metrics,servername=SUNSYS,type=Performance\ metrics Page\ split\ per\ batch\ request=4000
+Performance\ metrics,servername=SUNSYS,type=Performance\ metrics Sql\ compilation\ per\ batch\ request=4000
+Performance\ metrics,servername=SUNSYS,type=Performance\ metrics Sql\ recompilation\ per\ batch\ request=4000
+Performance\ metrics,servername=SUNSYS,type=Performance\ metrics Readahead\ per\ page\ read=4000
+CPU\ (%),servername=SUNSYS SQL\ process=4000
+CPU\ (%),servername=SUNSYS External\ process=4000
+Bytes\ Sent\ to\ Replica/sec\ |\ _Total\ |\ Availability\ Replica,servername=SUNSYS,type=Performance\ counters value=4000
+Bytes\ Received\ from\ Replica/sec\ |\ _Total\ |\ Availability\ Replica,servername=SUNSYS,type=Performance\ counters value=4000
+Transaction\ Delay\ |\ _Total\ |\ Database\ Replica,servername=SUNSYS,type=Performance\ counters value=4000
+Transaction\ Delay\ |\ _Total\ |\ Database\ Replica,servername=SUNSYS,type=Performance\ counters value=4000
+Total\ Server\ Memory\ (KB)\ |\ Memory\ Manager,servername=SUNSYS,type=Performance\ counters value=4000
+Target\ Server\ Memory\ (KB)\ |\ Memory\ Manager,servername=SUNSYS,type=Performance\ counters value=3000
+Total\ Server\ Memory\ (KB)\ |\ Memory\ Manager,servername=SUNSYS,type=Performance\ counters SQL\ value=4000
+Performance\ metrics,servername=SUNSYS,type=Performance\ metrics Total\ target\ memory\ ratio=2000
+Performance\ metrics,servername=SUNSYS Page\ File\ Usage\ (%)=2322
+CPU\ (%),servername=SUNSYS,type=CPU\ usage SystemIdle=30
+CPU\ (%),servername=SUNSYS,type=CPU\ usage SQL\ process=40
+CPU\ (%),servername=SUNSYS,type=CPU\ usage External\ process=30
+Performance\ metrics,servername=SUNSYS,type=Performance\ metrics Signal\ wait\ (%)=23
+Performance\ metrics,servername=SUNSYS,type=Performance\ metrics Average\ tasks=33
+Performance\ metrics,servername=SUNSYS,type=Performance\ metrics Average\ runnable\ tasks=43
+Recovery\ Model\ FULL,servername=SUNSYS,type=Database\ properties total=0
+Recovery\ Model\ BULK_LOGGED,servername=SUNSYS,type=Database\ properties total=0
+Recovery\ Model\ SIMPLE,servername=SUNSYS,type=Database\ properties total=1
+State\ OFFLINE,servername=SUNSYS,type=Database\ properties total=0
+State\ ONLINE,servername=SUNSYS,type=Database\ properties total=1
+State\ SUSPECT,servername=SUNSYS,type=Database\ properties total=0
+State\ RECOVERING,servername=SUNSYS,type=Database\ properties total=0
+State\ RECOVERING_PENDING,servername=SUNSYS,type=Database\ properties total=0
+State\ RESTORING,servername=SUNSYS,type=Database\ properties total=0

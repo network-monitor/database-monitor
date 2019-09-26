@@ -1,0 +1,8 @@
+# DML
+# CONTEXT-DATABASE: ebridge
+"State OFFLINE" servername=IDMS,type="Database properties" total=0
+"State ONLINE" servername=IDMS,type="Database properties" total=1
+"State SUSPECT" servername=IDMS,type="Database properties" total=0
+"State RECOVERING" servername=IDMS,type="Database properties" total=0
+"State RECOVERING_PENDING" servername=IDMS,type="Database properties" total=0
+"State RESTORING" servername=IDMS,type="Database properties" total=0

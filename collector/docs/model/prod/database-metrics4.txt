@@ -1,0 +1,6 @@
+# DML
+# CONTEXT-DATABASE: ebridge
+Target\ Server\ Memory\ (KB)\ |\ Memory\ Manager,servername=IDMS,type=Performance\ counters value=3000
+Total\ Server\ Memory\ (KB)\ |\ Memory\ Manager,servername=IDMS,type=Performance\ counters SQL\ value=4000
+Performance\ metrics,servername=IDMS,type=Performance\ metrics Total\ target\ memory\ ratio=2000
+Performance\ metrics,servername=IDMS Page\ File\ Usage\ (%)=2322

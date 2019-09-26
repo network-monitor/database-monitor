@@ -1,0 +1,94 @@
+SELECT mean("value") FROM "Page life expectancy | Buffer Manager" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters') 
+SELECT mean("Buffer pool rate (bytes/sec)") FROM "Performance metrics" WHERE ("servername" =~ /$/ AND "type" = 'Performance metrics') 
+SELECT "value" FROM "Free list stalls/sec | Buffer Manager" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters')
+SELECT mean("value") FROM "Memory Grants Pending | Memory Manager" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters') 
+SELECT mean("Total") FROM "Rows reads (bytes/sec)" WHERE ("servername" =~ /$/ AND "type" = 'Database IO') 
+SELECT mean("Total") FROM "Log reads (bytes/sec)" WHERE ("servername" =~ /$/ AND "type" = 'Database IO') 
+SELECT mean("Total") FROM "Rows writes (bytes/sec)" WHERE ("servername" =~ /$/ AND "type" = 'Database IO') 
+SELECT mean("Total") FROM "Log writes (bytes/sec)" WHERE ("servername" =~ /$/ AND "type" = 'Database IO') 
+SELECT mean("Average pending disk IO") FROM "Performance metrics" WHERE ("servername" =~ /$/ AND "type" = 'Performance metrics') 
+SELECT "value" FROM "Network IO waits | Average wait time (ms) | Wait Statistics" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters')
+SELECT mean("value") FROM "User Connections | General Statistics" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters') 
+SELECT mean("Connection memory per connection (bytes)") FROM "Performance metrics" WHERE ("servername" =~ /$/ AND "type" = 'Performance metrics')
+SELECT "value" FROM "Data File(s) Size (KB) | _Total | Databases" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters')
+SELECT "value" FROM "Data File(s) Size (KB) | mssqlsystemresource | Databases" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters')
+SELECT mean("value") FROM "Percent Log Used | _Total | Databases" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters') 
+SELECT mean("value") FROM "Percent Log Used | mssqlsystemresource | Databases" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters') GROUP BY time(30s) 
+SELECT mean("value") FROM "Backup/Restore Throughput/sec | _Total | Databases" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters') GROUP BY time(30s) 
+SELECT mean("value") FROM "Batch Requests/sec | SQL Statistics" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters') GROUP BY time(5s)
+
+
+
+Transactions/sec\ |\ _Total\ |\ Databases,servername=IDMS,type=Performance\ counters value=4000 
+SELECT mean("value") FROM "Transactions/sec | _Total | Databases" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters') GROUP BY time(5s) 
+
+Full\ Scans/sec\ |\ Access\ Methods,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("value") FROM "Full Scans/sec | Access Methods" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters') GROUP BY time(5s) fill(null);SELECT 
+
+SQL\ Cache\ Memory\ (KB)\ |\ Memory\ Manager,servername=IDMS,type=Performance\ counters value=4000
+SELECT "value" FROM "SQL Cache Memory (KB) | Memory Manager" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters');
+
+Optimizer Memory (KB) | Memory Manager,servername=IDMS,type=Performance\ counters value=4000
+SELECT "value" FROM "Optimizer Memory (KB) | Memory Manager" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters');
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT "value" FROM "Log Pool Memory (KB) | Memory Manager" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters');
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT "value" FROM "Lock Memory (KB) | Memory Manager" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters');
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT "value" FROM "Database Cache Memory (KB) | Memory Manager" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters');
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT "value" FROM "Connection Memory (KB) | Memory Manager" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters')
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("value") FROM "Log Flushes/sec | _Total | Databases" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters') GROUP BY time(2s) fill(null);
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("value") FROM "Log Pool Cache Misses/sec | _Total | Databases" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters') GROUP BY time(2s) fill(null);
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("value") FROM "Log Pool Disk Reads/sec | _Total | Databases" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters') GROUP BY time(2s) fill(null);
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("value") FROM "Log Pool Requests/sec | _Total | Databases" WHERE ("servername" =~ /$/ AND "type" = 'Performance counters') GROUP BY time(2s) fill(null)
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT "Buffer", "CLR", "I/O", "Latch", "Lock", "Memory", "Network", "Service broker", "Other", "SQLOS", "XEvent" FROM "Wait time (ms)" WHERE ("type" = 'Wait stats' AND "servername" =~ 
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT "Buffer", "CLR", "I/O", "Latch", "Lock", "Memory", "Network", "Service broker", "Other", "SQLOS", "XEvent" FROM "Wait tasks" WHERE ("type" = 'Wait stats' AND "servername" =~ 
+
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("Page split per batch request") FROM "Performance metrics" WHERE ("servername" =~ /$/ AND "type" = 'Performance metrics') GROUP BY time(5s) fill(null);
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("Sql compilation per batch request") FROM "Performance metrics" WHERE ("servername" =~ /$/ AND "type" = 'Performance metrics') GROUP BY time(5s) fill(null);
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("Sql recompilation per batch request") FROM "Performance metrics" WHERE ("servername" =~ /$/ AND "type" = 'Performance metrics') GROUP BY time(5s) fill(null);
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("Readahead per page read") FROM "Performance metrics" WHERE ("servername" =~ /$/ AND "type" = 'Performance metrics') GROUP BY time(5s) fill(null)
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("SQL process") FROM "CPU (%)" WHERE ("servername" =~ /$/) GROUP BY time(5s) fill(null);
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("External process") FROM "CPU (%)" WHERE ("servername" =~ /$/) GROUP BY time(5s) fill(null)
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("value") FROM "Bytes Sent to Replica/sec | _Total | Availability Replica" WHERE ("type" = 'Performance counters' AND "servername" =~ /^$/) GROUP BY 
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("value") FROM "Bytes Received from Replica/sec | _Total | Availability Replica" WHERE ("type" = 'Performance counters' AND "servername" =~ /^$/) GROUP BY time(5s) fill(null)
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("value") FROM "Transaction Delay | _Total | Database Replica" WHERE ("type" = 'Performance counters' AND "servername" =~ /^$/) GROUP BY time(5s) 
+
+Batch\ Requests/sec\ |\ SQL\ Statistics,servername=IDMS,type=Performance\ counters value=4000
+SELECT mean("value") FROM "Transaction Delay | _Total | Database Replica" WHERE ("type" = 'Performance counters' AND "servername" =~ /^$/) GROUP BY time(5s) fill(null)
+

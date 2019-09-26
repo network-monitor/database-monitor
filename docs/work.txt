@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "main.py", line 113, in <module>
+    main()
+  File "main.py", line 100, in main
+    scanned, successfullyScanned, printers = runScan(args.l)
+  File "main.py", line 78, in runScan
+    printer = query(ip)
+  File "main.py", line 63, in query
+    return Printer(ip, success, finalResults)
+  File "/opt/ebridge/printer-monitor/collector/printerAndPrinterAccessories.py", line 103, in __init__
+    self.supplies.append(PrinterSupply(supplyType, description, unit, maxLevel, currentLevel))
+  File "/opt/ebridge/printer-monitor/collector/printerAndPrinterAccessories.py", line 63, in __init__
+    self.percentLevel = 100 * float(currentLevel) / float(maxLevel)
+TypeError: float() argument must be a string or a number

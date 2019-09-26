@@ -1,0 +1,48 @@
+DATABASE MONITORING DEV NOTES
+
+1/ Instances
+"query": "SHOW TAG VALUES WITH KEY = \"servername\"",
+"datasource": "InfluxDB",
+
+2/ Database Properties
+
+2.1/ Database Health
+q:"SELECT mean("total") FROM "State OFFLINE" WHERE ("servername" =~ /$/ AND "type" = 'Database properties') AND time >= now() - 1h GROUP BY time(30s) fill(null)"
+
+2.2/ Online
+q:"SELECT "total" FROM "State ONLINE" WHERE ("servername" =~ /$/ AND "type" = 'Database properties') AND time >= now() - 1h"
+
+2.3/ Offline
+q:"SELECT "total" FROM "State OFFLINE" WHERE ("servername" =~ /$/ AND "type" = 'Database properties') AND time >= now() - 1h"
+
+3/ KPI | CPU
+3.3 CPU%
+q:"SELECT mean("SQL process") FROM "CPU (%)" WHERE ("servername" =~ /^$/ AND "type" = 'CPU usage') AND time >= now() - 1h GROUP BY time(30s) fill(null)"
+
+3.3 
+q:"SELECT mean("External process") FROM "CPU (%)" WHERE ("servername" =~ /^$/ AND "type" = 'CPU usage') AND time >= now() - 1h GROUP BY time(30s) fill(null)"
+
+
+SQL METRICS
+===========
+https://sqlmonitormetrics.red-gate.com/sql-server-memory-manager-sql-cache-memory/
+
+--SQL Server: Memory Manager: SQL Cache Memory(KB) (Custom Metric)
+SELECT cntr_value
+  FROM sys.dm_os_performance_counters
+  WHERE counter_name = 'SQL Cache Memory (KB)';
+
+------ CPU Usages ------------
+https://www.sqlservercentral.com/forums/topic/find-cpu-from-dm_os_performance_counters
+
+https://www.dbrnd.com/2016/04/sql-server-the-important-performance-counters-dm_os_performance_counters/
+
+------------------------------  
+
+2017 Version
+------------  
+https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-os-performance-counters-transact-sql?view=sql-server-2017
+
+Older Versions
+--------------
+https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-os-performance-counters-transact-sql?view=sql-server-2017&viewFallbackFrom=sql-server-previousversions  

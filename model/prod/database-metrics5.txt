@@ -1,0 +1,3 @@
+# DML
+# CONTEXT-DATABASE: ebridge
+Total\ Server\ Memory\ (KB)\ |\ Memory\ Manager,servername=IDMS,type=Performance\ counters value=4000

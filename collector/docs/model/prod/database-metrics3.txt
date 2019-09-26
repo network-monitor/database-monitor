@@ -1,0 +1,8 @@
+# DML
+# CONTEXT-DATABASE: ebridge
+CPU\ (%),servername=IDMS,type=CPU\ usage SystemIdle=30
+CPU\ (%),servername=IDMS,type=CPU\ usage SQL\ process=40
+CPU\ (%),servername=IDMS,type=CPU\ usage External\ process=30
+Performance\ metrics,servername=IDMS,type=Performance\ metrics Signal\ wait\ (%)=23
+Performance\ metrics,servername=IDMS,type=Performance\ metrics Average\ tasks=33
+Performance\ metrics,servername=IDMS,type=Performance\ metrics Average\ runnable\ tasks=43

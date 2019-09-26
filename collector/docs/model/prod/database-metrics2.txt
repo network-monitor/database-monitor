@@ -1,0 +1,5 @@
+# DML
+# CONTEXT-DATABASE: ebridge
+Recovery\ Model\ FULL,servername=IDMS,type=Database\ properties total=0
+Recovery\ Model\ BULK_LOGGED,servername=IDMS,type=Database\ properties total=0
+Recovery\ Model\ SIMPLE,servername=IDMS,type=Database\ properties total=1

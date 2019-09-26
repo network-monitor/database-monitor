@@ -1,0 +1,56 @@
+
+https://www.alibaba.com/product-detail/ZTE-R8882-GUL9012-ZTE-ZXSDR-R8882_50030870419.html
+https://pmacct-discussion.pmacct.narkive.com/1GXwam7Z/pmacct-conf-for-aggregated-ip-based-accounting-and-vlan-information
+https://www.refmanual.com/2012/11/21/ip-accounting-using-pmacct-and-netflow-1/#.XXoOVCgzaUk
+
+https://github.com/gbrian/grafana-simple-sql-datasource/issues/2
+
+https://github.com/gbrian/grafana-simple-sql-datasource
+Test on your browser http://myserver:port/con=mssql://user:name@server/database you must get a {"status":"sucess"} response
+
+
+http://41.60.201.114:3000/sql/con=mssql://sa:baobab@1@195.1.1.102/IDMS
+
+
+java -cp ../dist/lib/jtds-1.3.1.jar:. MSSqlTestConnection "jdbc:jtds:sqlserver://195.1.1.102:1433/IDMS;instance=MSSQLSERVER;user=sa;password=baobab@1;TDS=7.0"
+
+://195.1.1.102:1433/IDMS;instance=MSSQLSERVER;user=sa;password=baobab@1;TDS=7.0"
+connected
+->sqlconnmemory: 328, sqllockmemory : 18136, sqloptmemory : 1008, sqlsqlcachememory : 1680, sqltargetmemory : 2370472
+Done.
+
+
+Average Wait Time (ms) -> instance_name : _Total                                                                                                                          , object_name : SQLServer:Locks                                                                                                                 , cntr_value:2948
+Done.
+Cache Hit Ratio -> instance_name : _Total                                                                                                                          , object_name : SQLServer:Plan Cache                                                                                                            , cntr_value:1805
+Cache Hit Ratio -> instance_name : _Total                                                                                                                          , object_name : SQLServer:Cursor Manager by Type                                                                                                , cntr_value:0
+Cache Hit Ratio -> instance_name : _Total                                                                                                                          , object_name : SQLServer:Catalog Metadata                                                                                                      , cntr_value:110513
+Done.
+ Log Cache Hit Ratio -> instance_name : _Total                                                                                                                          , object_name : SQLServer:Databases                                                                                                             , cntr_value:2505
+Done.
+->: sqlbuffhitratio16, sqlcachehitratio : 1813, sqllogcachehitratio : 2505
+Done.
+->: sqluserconn3, sqlactivetrans : 7
+Done.
+
+java -cp ../dist/lib/jtds-1.3.1.jar:. MSSqlTestConnection "jdbc:jtds:sqlserver://195.1.1.133:1433;\\MSSQLSERVER;databaseName=SUNSYSTEMS" "sa" "SUNSYS*123"
+
+-------
+
+java -cp ../dist/lib/jtds-1.3.1.jar:. MSSqlTestConnection "jdbc:jtds:sqlserver://195.1.1.133:1433;\\MSSQLSERVER;databaseName=SUNSYSTEMS" "sa" "SUNSYS*123"
+
+-------
+
+http://41.60.201.114:3000/con=mssql://sa:baobab@195.1.1.102/IDMS
+
+TypeError: Cannot read property '1' of null
+    at SQLProxyServer.getConnection (/home/ebridge/github.com/ebridge/sqlproxyserver/dist/serverside/sqlproxyserver.js:37:44)
+    at /home/ebridge/github.com/ebridge/sqlproxyserver/dist/serverside/sqlproxyserver.js:60:13
+    at Layer.handle [as handle_request] (/home/ebridge/github.com/ebridge/sqlproxyserver/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ebridge/github.com/ebridge/sqlproxyserver/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/ebridge/github.com/ebridge/sqlproxyserver/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ebridge/github.com/ebridge/sqlproxyserver/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ebridge/github.com/ebridge/sqlproxyserver/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/ebridge/github.com/ebridge/sqlproxyserver/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ebridge/github.com/ebridge/sqlproxyserver/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/ebridge/github.com/ebridge/sqlproxyserver/node_modules/body-parser/lib/types/json.js:110:7)
